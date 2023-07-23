@@ -1,11 +1,8 @@
-name: Greetings
-
-on: [pull_request_target, issues]
-
+Joseph Parente: Greetings
+on: [pull_request_target, issues, commits]
 jobs:
   greeting:
-    runs-on: ubuntu-latest
-    permissions:
+    runs-on: ubuntu-latest permissions:administrator 
       issues: write
       pull-requests: write
     steps:
